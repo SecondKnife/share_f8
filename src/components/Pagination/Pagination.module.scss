@@ -1,0 +1,37 @@
+.wrapper {
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+
+    .page {
+        margin-right: 4px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        font-weight: 500;
+        transition: all 0.2s;
+        user-select: none;
+        border: 1px solid transparent;
+        color: #000;
+
+        &:hover {
+            border: 1px solid #d0d7de;
+        }
+
+        &.active {
+            background-color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+            color: var(--background-color);
+        }
+
+        &.disabled {
+            border: 1px solid #fff;
+            color: #d0d7de;
+            cursor: default;
+        }
+    }
+}

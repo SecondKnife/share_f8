@@ -1,0 +1,50 @@
+.wrapper {
+    border-left: 1px solid #e7e7e7;
+    bottom: 50px;
+    margin-top: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 23%;
+    z-index: 2;
+
+    &.active {
+        width: 0;
+    }
+
+    .learn-list {
+        animation: Tracks 0.2s ease-in;
+        background-color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 16px;
+            user-select: none;
+
+            .heading {
+                font-size: 1.6rem;
+                line-height: 1.4;
+                margin: 0;
+            }
+        }
+
+        .body {
+            overflow-y: overlay;
+        }
+    }
+}
+
+@keyframes Tracks {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

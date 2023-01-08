@@ -1,0 +1,106 @@
+.wrapper {
+    .panel {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        margin-bottom: 8px;
+
+        .chapter {
+            background: #f5f5f5;
+            border: 1px solid #ebebeb;
+            border-radius: 6px;
+            padding: 0;
+            user-select: none;
+            position: sticky;
+            top: 147px;
+            z-index: 1;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .heading {
+                color: inherit;
+                font-size: 16px;
+                margin-bottom: 0;
+                margin-top: 0;
+
+                .title {
+                    color: #333;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    overflow: hidden;
+                    padding: 14px 30px 14px 48px;
+                    position: relative;
+
+                    &::before {
+                        color: var(--color-primary);
+                        content: '+';
+                        font-size: 26px;
+                        font-weight: 300;
+                        left: 20px;
+                        position: absolute;
+                        top: 49%;
+                        transform: translateY(-50%);
+                    }
+
+                    &.active::before {
+                        content: '-';
+                        font-size: 40px;
+                        top: 40%;
+                    }
+
+                    .name-chapter {
+                        font-size: 1.6rem;
+                        float: left;
+                    }
+
+                    .number-lesson {
+                        font-size: 1.4rem;
+                        min-width: 72px;
+                        text-align: right;
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        .collapse {
+            display: block;
+
+            .lesson-item {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+                color: #333;
+                font-size: 1.4rem;
+                line-height: 48px;
+                overflow: hidden;
+                padding: 0 30px 0 48px;
+                position: relative;
+
+                .lesson-left {
+                    float: left;
+                    transition: all 0.3s ease-in-out;
+
+                    svg {
+                        color: rgba(240, 81, 35, 0.4);
+                        margin-right: 4px;
+                        left: 32px;
+                        position: absolute;
+                        top: 17px;
+                    }
+
+                    .lesson-name {
+                        padding-left: 6px;
+                    }
+                }
+
+                .lesson-right {
+                    margin-left: 58px;
+                    min-width: 69px;
+                    text-align: right;
+                    float: right;
+                }
+            }
+        }
+    }
+}

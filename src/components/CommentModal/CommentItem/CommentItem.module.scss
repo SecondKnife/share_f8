@@ -1,0 +1,135 @@
+.wrapper {
+    display: flex;
+    margin-top: 16px;
+    position: relative;
+
+    .avatar {
+        a {
+            img {
+                background-color: var(--color-primary);
+                border-radius: 50%;
+                height: 36px;
+                object-fit: cover;
+                text-align: center;
+                width: 36px;
+            }
+        }
+    }
+
+    .body {
+        flex: 1 0%;
+        margin-left: 8px;
+        max-width: 592px;
+        padding-left: 4px;
+
+        .wrap {
+            display: inline-block;
+            max-width: 100%;
+
+            .content {
+                min-width: 400px;
+                background-color: rgb(242, 243, 245);
+                border-radius: 18px;
+                color: rgb(28, 30, 33);
+                padding: 9px 12px;
+
+                a {
+                    .author {
+                        color: var(--color-black);
+                        display: inline-block;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        margin: 0px;
+                    }
+                }
+
+                .text {
+                    font-size: 1.4rem;
+                    overflow-x: auto;
+                    word-break: break-word;
+                    margin-bottom: 5px !important;
+                }
+            }
+
+            .time {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 8px;
+                min-height: 27px;
+                user-select: none;
+
+                .createdAt {
+                    align-items: center;
+                    color: rgb(153, 153, 153);
+                    display: flex;
+                    font-size: 1.4rem;
+                    margin: 0px;
+
+                    &:hover {
+                        .more-btn-wrap {
+                            opacity: 1;
+                        }
+                    }
+
+                    .icon {
+                        background-color: transparent;
+                        text-align: center;
+
+                        .like {
+                            color: rgb(232, 122, 90);
+                            font-size: 1.3rem;
+                            margin: 0px 4px;
+
+                            &:hover {
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .reply-comment {
+                        color: rgb(232, 122, 90);
+                        font-size: 1.3rem;
+                        margin: 0px 4px;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .create-time {
+                        font-size: 1.3rem;
+                        margin: 0px 4px;
+                    }
+
+                    .more-btn-wrap {
+                        align-items: center;
+                        display: flex;
+                        height: 18px;
+                        transition: all 0.3s ease-in-out 0s;
+                        opacity: 0;
+                        color: rgb(153, 153, 153);
+                        font-size: 1.4rem;
+
+                        .more-btn {
+                            background-color: transparent;
+                            color: rgb(136, 136, 136);
+                            display: inline-block;
+                            font-size: 1.6rem;
+                            margin: 0px;
+                            padding: 4px;
+                            top: 2px;
+
+                            &:hover {
+                                color: #333;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

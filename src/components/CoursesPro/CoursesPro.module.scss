@@ -1,0 +1,42 @@
+.wrapper {
+    .title {
+        color: var(--color-black);
+        font-size: 2.4rem;
+        font-weight: 900;
+        margin-top: 38px;
+
+        .crown-icon {
+            margin-left: 8px;
+            width: 22px;
+        }
+    }
+
+    .desc {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    .courses {
+        margin: 20px auto 0;
+
+        .wrap {
+            margin-left: -12px;
+            margin-right: -12px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .content {
+                width: 33.33333%;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                .inner {
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

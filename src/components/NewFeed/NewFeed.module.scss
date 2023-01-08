@@ -1,0 +1,30 @@
+.wrapper {
+    bottom: 60px;
+    left: 22px;
+    position: fixed;
+    z-index: 10;
+
+    .btn {
+        align-items: center;
+        background-color: hsla(0, 0%, 94%, 0.8);
+        border-radius: 50%;
+        color: #404040;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        height: 44px;
+        justify-content: center;
+        margin-top: 4px;
+        width: 44px;
+        border: hsla(0, 0%, 94%, 0.8);
+
+        .icon {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+    }
+}

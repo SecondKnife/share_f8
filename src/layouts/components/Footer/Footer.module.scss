@@ -1,0 +1,152 @@
+.wrapper {
+    background-color: #181821;
+    color: #a9b3bb;
+    overflow: hidden;
+    padding: 68px 0 40px;
+
+    .container {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+
+        .content {
+            margin-left: -12px;
+            margin-right: -12px;
+            display: flex;
+            justify-content: center;
+
+            .colum {
+                width: 25%;
+                display: block;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                &.col {
+                    width: 16.66667%;
+                }
+
+                .fill {
+                    display: flex;
+                    justify-content: center;
+
+                    .colum-header {
+                        display: flex;
+                        align-items: center;
+
+                        .logo {
+                            img {
+                                border-radius: 8px;
+                                height: 38px;
+                                margin-right: 10px;
+                                width: 38px;
+                            }
+                        }
+
+                        h4 {
+                            color: #fff;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .colum-body {
+                        color: #a9b3bb;
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                        position: relative;
+                        margin: 14px 0;
+
+                        p {
+                            color: currentColor;
+                        }
+                        a {
+                            color: currentColor;
+
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+
+                    .colum-footer {
+                        .dmca {
+                            img {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+
+                    .title {
+                        color: #fff;
+                        font-size: 1.8rem;
+                        line-height: 1.6;
+                        text-transform: uppercase;
+                    }
+
+                    .list {
+                        padding-left: 0;
+                        list-style: none;
+                        margin: 20px 0;
+
+                        .item {
+                            font-size: 1.4rem;
+                            line-height: 2.2rem;
+                            margin-bottom: 8px;
+                            position: relative;
+
+                            .link {
+                                color: #a9b3bb;
+                                cursor: pointer;
+                                position: relative;
+                                transition: 0.3s ease;
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 12px;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 74px;
+
+                .social {
+                    display: flex;
+                    align-items: center;
+
+                    .youtube {
+                        font-size: 3.4rem;
+                        color: #eb2c3b;
+                    }
+
+                    .facebook {
+                        font-size: 3.1rem;
+                        color: #4867aa;
+                        margin-left: 16px;
+                    }
+
+                    .tiktok {
+                        font-size: 3rem;
+                        color: #ccc;
+                        margin-left: 16px;
+                    }
+
+                    a {
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

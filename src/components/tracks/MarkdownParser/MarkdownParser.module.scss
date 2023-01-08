@@ -1,0 +1,43 @@
+.wrapper {
+    line-height: 2;
+    word-wrap: break-word;
+    color: #292929;
+
+    blockquote {
+        border-left: 3px solid var(--color-primary);
+        color: #757575;
+        margin-left: 0;
+        padding: 0 0 2px 20px;
+        margin: 16px 40px 16px 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    a[href] {
+        color: var(--color-primary);
+        text-decoration: underline;
+    }
+
+    ol,
+    ul {
+        margin: 28px 0;
+        padding-left: 24px;
+        list-style: disc;
+    }
+
+    p img {
+        display: block;
+        margin: 16px auto;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

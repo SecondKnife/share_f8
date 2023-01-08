@@ -1,0 +1,113 @@
+// @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #f05123;
+    --color-gray: #7c7c7c;
+    --color-black: #000;
+    --color-text: #333;
+    --color-desc: #0000008a;
+    --color-valid: #f33a58;
+
+    --background-color: #fff;
+}
+
+::selection {
+    background: #f05123;
+    color: var(--background-color);
+}
+::-moz-selection {
+    background: #f05123;
+    color: var(--background-color);
+}
+::-webkit-selection {
+    background: #f05123;
+    color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html ::-webkit-scrollbar {
+    border-radius: 0;
+    height: 8px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+html ::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    overflow-y: overlay;
+    margin: 0;
+}
+
+span {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+    display: block;
+    outline: none;
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 600;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    background-color: transparent;
+
+    &:focus,
+    &:hover,
+    &:visited {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,94 @@
+::placeholder {
+    color: #757575;
+}
+
+.wrapper {
+    padding: 0 44px 44px;
+
+    .container {
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+
+        input {
+            font-size: 4rem;
+            line-height: 1.4;
+            font-weight: 500;
+            margin: 50px 0;
+            transition: font-size 0.3s ease;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            width: 100%;
+            color: var(--color-black);
+
+            &.active {
+                font-size: 3.2rem;
+            }
+        }
+
+        .result {
+            margin-left: -12px;
+            margin-right: -12px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .content {
+                width: 66.66667%;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                .heading {
+                    .tabs {
+                        display: flex;
+                        list-style: none;
+                        margin-bottom: 0;
+                        margin-top: 16px;
+                        padding-left: 0;
+
+                        li + li {
+                            margin-left: 24px;
+                        }
+
+                        a {
+                            color: #0000008a;
+                            display: block;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            padding-bottom: 14px;
+
+                            &:hover {
+                                color: var(--color-black);
+                            }
+
+                            &.active {
+                                font-weight: 700;
+                                position: relative;
+                                color: var(--color-black);
+
+                                &::after {
+                                    border-bottom: 2px solid var(--color-black);
+                                    bottom: -1px;
+                                    content: '';
+                                    display: block;
+                                    left: 0;
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .divider {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                }
+
+                .result-content {
+                    margin-top: 16px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

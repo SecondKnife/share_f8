@@ -1,0 +1,98 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .my-info {
+        animation: Tippy-animation 0.3s ease;
+        background: var(--background-color);
+        border-radius: 10px;
+        box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+        transition: all 0.3s ease-in-out;
+        min-width: 230px;
+        padding: 8px 24px;
+        position: absolute;
+        right: -20px;
+        top: 52px;
+        color: #1d2129;
+
+        .user {
+            align-items: center;
+            display: flex;
+
+            .avatar {
+                margin: 10px 0;
+                position: relative;
+
+                img {
+                    border-radius: 50%;
+                    height: 50px;
+                    object-fit: cover;
+                    width: 50px;
+                }
+            }
+
+            .info {
+                margin-left: 12px;
+
+                .name {
+                    color: #292929;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+
+                .username {
+                    color: #757575;
+                    font-size: 1.4rem;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            margin: 8px 0;
+        }
+
+        .list {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+
+            a {
+                color: #666;
+                display: block;
+                font-size: 1.4rem;
+                padding: 10px 0;
+
+                &:hover {
+                    color: #292929;
+                }
+            }
+        }
+    }
+
+    .btn-info {
+        padding-left: 12px;
+
+        img {
+            cursor: pointer;
+            object-fit: cover;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+@keyframes Tippy-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

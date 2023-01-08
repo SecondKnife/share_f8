@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: var(--color-black);
+    padding: 0 8.5%;
+    position: relative;
+    width: 100%;
+
+    &.active {
+        padding: 0 16%;
+    }
+
+    .player-wrap {
+        position: relative;
+        padding-top: 56.25%;
+
+        .player {
+            inset: 0;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.react-player__shadow {
+    background: var(--color-primary) !important;
+    transition: 0.3s ease;
+}

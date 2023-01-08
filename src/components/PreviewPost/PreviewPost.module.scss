@@ -1,0 +1,186 @@
+.wrapper {
+    background-color: var(--background-color);
+    display: flex;
+    inset: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    will-change: opacity, transform;
+    animation: Modal 0.2s ease;
+    z-index: 999;
+
+    .close {
+        color: #0000008a;
+        font-size: 3.6rem;
+        padding: 12px 24px 24px;
+        position: fixed;
+        right: 8px;
+        top: 0;
+        z-index: 99999;
+
+        &:hover {
+            color: var(--back-color);
+            cursor: pointer;
+        }
+    }
+
+    .container {
+        margin: auto;
+        overflow: hidden;
+        overflow-y: auto;
+        padding: 100px 0;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+
+        .content {
+            width: 100%;
+            max-width: 1224px;
+            margin: 0 auto;
+
+            .wrap {
+                margin-left: -12px;
+                margin-right: -12px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .box {
+                    width: 50%;
+                    padding-left: 12px;
+                    padding-right: 12px;
+
+                    .preview {
+                        line-height: 1.6;
+                        padding-right: 2.8rem;
+
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #333;
+                        }
+
+                        .image-prev {
+                            background-color: #fafafa;
+                            background-position: 50%;
+                            background-size: cover;
+                            color: #0000008a;
+                            font-size: 1.4rem;
+                            height: 200px;
+                            margin-top: 1.6rem;
+                            outline: none;
+                            padding: 2.4rem;
+                            position: relative;
+                            text-align: center;
+                            width: 100%;
+                            cursor: pointer;
+
+                            &::before {
+                                background-color: hsla(0, 0%, 100%, 0.6);
+                                bottom: 0;
+                                content: '';
+                                display: block;
+                                left: 0;
+                                opacity: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                transition: opacity 0.3s ease;
+                            }
+
+                            input {
+                                display: none;
+                            }
+
+                            span {
+                                color: var(--color-primary);
+                                margin-top: 1.2rem;
+                            }
+
+                            &[style^='background-image:'] {
+                                &:hover::before {
+                                    opacity: 1;
+                                }
+
+                                &:hover p,
+                                &:hover span {
+                                    opacity: 1;
+                                    position: relative;
+                                    z-index: 1;
+                                }
+
+                                p,
+                                span {
+                                    opacity: 0;
+                                }
+                            }
+                        }
+
+                        .prev-title {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                            margin: 1.6rem 0 4px;
+                            padding-bottom: 4px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-size: 2rem;
+                            font-weight: 600;
+                        }
+
+                        .prev-desc {
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                            margin: 1.6rem 0 4px;
+                            padding-bottom: 4px;
+                            font-size: 1.4rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                        .note {
+                            color: #0000008a;
+                            font-size: 1.4rem;
+                            margin-top: 2.4rem;
+                        }
+                    }
+
+                    .preview-tag {
+                        margin-top: 50px;
+
+                        p {
+                            font-weight: 600;
+                        }
+
+                        .action {
+                            margin-top: 40px;
+
+                            .action-public {
+                                background-color: #029e74;
+                                color: var(--background-color);
+                                appearance: none;
+                                border: 1px solid #029e74;
+                                border-radius: 4px;
+                                display: inline-block;
+                                font-size: 1.4rem;
+                                padding: 10px 16px;
+                                user-select: none;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    opacity: 0.9;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes Modal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

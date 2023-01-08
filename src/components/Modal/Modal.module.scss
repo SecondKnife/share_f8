@@ -1,0 +1,123 @@
+.wrapper {
+    border-radius: 16px;
+    max-width: 60vw;
+    max-height: 90vh;
+    transform: translate(33%, 40%);
+    animation: NewFeed 0.2s ease;
+    background-color: var(--background-color);
+    display: flex;
+    inset: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 999;
+    overscroll-behavior: none;
+    padding: 20px 40px;
+    height: 48vh;
+
+    .content {
+        .heading {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 8px 0 20px 0;
+        }
+
+        .list {
+            height: calc(60vh - 200px);
+            margin: 0 -40px;
+            overflow-y: overlay;
+            padding: 24px 40px 0;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            .item {
+                margin-bottom: 32px;
+                padding-bottom: 10px;
+
+                .title {
+                    font-size: 1.8rem;
+                }
+
+                .time {
+                    color: #999;
+                    font-size: 1.3rem;
+                    margin: 4px 0 0;
+                }
+
+                .body {
+                    padding-top: 12px;
+                    word-wrap: break-word;
+                    color: #292929;
+                    font-size: 1.8rem;
+                    line-height: 2;
+
+                    p {
+                        margin-bottom: 18px;
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                            max-width: 100%;
+                        }
+                    }
+
+                    hr {
+                        background-color: #ddd;
+                        border: transparent;
+                        height: 1px;
+                        margin: 40px 0;
+                    }
+
+                    a {
+                        color: var(--color-primary);
+                        text-decoration: underline;
+                    }
+
+                    i {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .close {
+        color: #0000008a;
+        font-size: 3.6rem;
+        padding: 12px 24px 24px;
+        position: fixed;
+        right: 8px;
+        top: 0;
+        cursor: pointer;
+        z-index: 99999;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.list::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+.overlay {
+    cursor: pointer;
+    animation: NewFeed 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    position: fixed;
+    overscroll-behavior: none;
+    z-index: 998;
+    overflow: auto;
+}
+
+@keyframes NewFeed {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

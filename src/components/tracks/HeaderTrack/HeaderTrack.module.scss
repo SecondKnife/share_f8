@@ -1,0 +1,116 @@
+.wrapper {
+    align-items: center;
+    background-color: #29303b;
+    display: flex;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+
+    .back-btn {
+        cursor: pointer;
+        display: flex;
+        height: 100%;
+        transition: background-color 0.2s linear;
+        width: 60px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        svg {
+            color: var(--background-color);
+            font-size: 1.6rem;
+            margin: auto;
+        }
+    }
+
+    .logo {
+        margin-left: 8px;
+        position: relative;
+        top: 2px;
+
+        img {
+            height: 30px;
+            border-radius: 8px;
+        }
+    }
+
+    .title {
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: var(--background-color);
+        display: -webkit-box;
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-left: 16px;
+        overflow: hidden;
+    }
+
+    .actions {
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+
+        .progress-wrap {
+            align-items: center;
+            display: flex;
+            margin-right: 24px;
+
+            .progress {
+                position: relative;
+                width: 34px;
+                height: 34px;
+                border: 2px solid #f05123;
+                border-radius: 50%;
+
+                .achieve {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #fff;
+                    justify-content: center;
+                }
+            }
+
+            .completed {
+                color: var(--background-color);
+                font-size: 1.3rem;
+                margin-left: 6px;
+            }
+
+            .cert {
+                color: var(--color-primary);
+                font-size: 1.3rem;
+                margin-left: 6px;
+                font-weight: 300;
+            }
+        }
+
+        .action-btn {
+            background-color: transparent;
+            color: var(--background-color);
+            margin-right: 24px;
+            opacity: 0.8;
+            user-select: none;
+            padding: 0;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+
+            svg {
+                margin-right: 6px;
+                font-size: 1.4rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+/* Đè css của thư viện */
+
+.react-player__shadow {
+    background: #f05123 !important;
+    transition: 0.3s ease;
+}
+
+body .rc-md-editor {
+    border: none;
+}
+
+body .rc-md-editor:not(.full) .rc-md-navigation {
+    background-color: #fff;
+    border-bottom: none;
+    position: sticky;
+    top: 66px;
+}
+
+body .rc-md-editor .rc-md-navigation .button-wrap .button {
+    min-width: 28px;
+}
+
+body .rc-md-editor .rc-md-navigation .button-wrap .rmel-iconfont {
+    font-size: 2rem;
+}
+
+body .rc-md-editor .editor-container .sec-html {
+    border-left: 1px solid #ebebeb;
+}
+
+body .rc-md-editor .editor-container > .section {
+    border-right: none;
+}
+
+.slick-slider {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    touch-action: pan-y;
+    user-select: none;
+}
+
+.slick-list,
+.slick-slider {
+    display: block;
+    position: relative;
+}
+
+.slick-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slick-track {
+    display: block;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+}
+
+.slick-prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.slick-next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.slick-arrow {
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    color: #4b4b4b;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 32px;
+    z-index: 1;
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+    transform: translateZ(0);
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+body .slick-dots {
+    bottom: -38px;
+    left: 40px;
+    text-align: left;
+}
+
+.slick-dots {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+body .slick-dots li,
+body .slick-dots li button {
+    width: 32px;
+}
+
+body .slick-dots li.slick-active,
+body .slick-dots li.slick-active button {
+    width: 50px;
+}
+
+.slick-dots li,
+.slick-dots li button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    position: relative;
+}
+
+.slick-dots li button {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    padding: 5px;
+}
+
+body .slick-dots li button:before {
+    background-color: #dce0e3;
+    border-radius: 4px;
+    content: '';
+    height: 8px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: width 0.3s linear, background-color 0.3s linear;
+    width: 32px;
+}
+
+body .slick-dots li.slick-active button:before {
+    background-color: #9aa6af;
+    width: 50px;
+}
+
+.slick-dots li button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    content: '•';
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}
+
+.custom-html-style p {
+    font-size: 16px;
+    line-height: 2;
+    margin: 16px 0;
+}

@@ -1,0 +1,223 @@
+.wrapper {
+    line-height: 1.6;
+    padding: 0 44px 60px;
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+
+        .content {
+            margin-left: -12px;
+            margin-right: -12px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .info-post {
+                margin-left: 8.33333%;
+                width: 18.22223%;
+                padding-left: 12px;
+                padding-right: 12px;
+
+                .aside {
+                    padding-right: 48px;
+                    position: sticky;
+                    top: 116px;
+
+                    .name-author {
+                        color: #292929;
+                        font-size: 1.6rem;
+                        margin-bottom: 0;
+                    }
+
+                    .author-bio {
+                        color: #757575;
+                        font-size: 1.4rem;
+                        margin-top: 4px;
+                    }
+
+                    hr {
+                        background-color: #e6e6e6;
+                        border: none;
+                        height: 1px;
+                    }
+                }
+            }
+
+            .content-post {
+                padding-left: 12px;
+                padding-right: 12px;
+                width: 54.55557%;
+
+                .title-post {
+                    color: #222;
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .info-author {
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 28px;
+
+                    .author-user {
+                        display: flex;
+
+                        .avatar-wrap {
+                            position: relative;
+
+                            .avatar {
+                                align-items: center;
+                                background: transparent;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+
+                                &.active {
+                                    background: linear-gradient(180deg, #ffd900, #b45264 93.68%);
+                                    padding: 3px;
+                                    position: relative;
+                                }
+
+                                img {
+                                    border-radius: 50%;
+                                    height: 48px;
+                                    object-fit: cover;
+                                    width: 48px;
+                                }
+                            }
+
+                            .crown {
+                                position: absolute;
+                                right: -10px;
+                                top: 0px;
+                                width: 16px;
+                            }
+                        }
+
+                        .info-user {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 1.4rem;
+                            justify-content: center;
+                            margin-left: 12px;
+
+                            .info-name {
+                                color: #292929;
+                                font-size: 1.6rem;
+                                font-weight: 600;
+                                margin: 0;
+                            }
+
+                            svg {
+                                color: #1b74e4;
+                                margin-left: 4px;
+                                font-size: 1.2rem;
+                            }
+
+                            .time {
+                                color: #757575;
+                                margin: 0;
+
+                                .dot {
+                                    color: #757575;
+                                    font-weight: 500;
+                                    padding: 0 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    .author-action {
+                        color: #757575;
+                        display: flex;
+                        font-size: 1.6rem;
+                        margin-right: -8px;
+                        user-select: none;
+
+                        .option-btn {
+                            cursor: pointer;
+                            padding: 4px 8px;
+                        }
+
+                        .toggle-btn {
+                            color: #757575;
+                        }
+                    }
+                }
+
+                .footer-post {
+                    margin-top: 60px;
+
+                    .tags-post {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 48px;
+
+                        .tags {
+                            background-color: #f2f2f2;
+                            border-radius: 3px;
+                            color: #666;
+                            font-size: 1.4rem;
+                            margin: 8px 8px 0 0;
+                            padding: 4px 10px;
+                        }
+                    }
+
+                    .same-author {
+                        margin-top: 60px;
+
+                        .same-title {
+                            font-size: 2.2rem;
+                        }
+
+                        .same-list {
+                            font-size: 1.6rem;
+                            list-style-type: disc;
+                            padding-left: 28px;
+
+                            a {
+                                color: #292929;
+                                display: inline-block;
+                                padding: 4px 0;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reaction {
+        color: #757575;
+        display: flex;
+        font-size: 1.6rem;
+        margin-top: 24px;
+
+        .reaction-btn {
+            padding: 4px 8px;
+            user-select: none;
+
+            &:hover {
+                color: #333;
+                cursor: pointer;
+            }
+
+            & + .reaction-btn {
+                margin-left: 24px;
+            }
+
+            svg {
+                font-size: 2rem;
+            }
+
+            span {
+                margin-left: 8px;
+            }
+        }
+    }
+}

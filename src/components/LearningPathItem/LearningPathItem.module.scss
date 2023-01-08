@@ -1,0 +1,89 @@
+.wrapper {
+    border: 2px solid #e8e8e8;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 500px;
+    height: 325.05px;
+
+    & + .wrapper {
+        margin-left: 24px;
+    }
+
+    .content {
+        display: flex;
+        margin-bottom: 20px;
+
+        .info {
+            .title {
+                margin: 0;
+                a {
+                    color: #242424;
+                    display: block;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    padding-bottom: 14px;
+                }
+            }
+
+            .desc {
+                font-size: 1.4rem;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+
+        .thumb {
+            align-items: center;
+            display: flex;
+            padding-left: 24px;
+
+            a {
+                align-items: center;
+                border: 5px solid var(--color-primary);
+                border-radius: 50%;
+                display: flex;
+                height: 122px;
+                justify-content: center;
+                overflow: hidden;
+                width: 122px;
+
+                img {
+                    border-radius: 50%;
+                    height: 98px;
+                    object-fit: cover;
+                    width: 98px;
+                }
+            }
+        }
+    }
+
+    .list-course {
+        display: flex;
+        margin: auto 0 28px;
+    }
+
+    .btn-detail {
+        a {
+            background-color: var(--color-primary);
+            color: var(--background-color);
+            font-weight: 600;
+            appearance: none;
+            border: 1px solid var(--primary-color);
+            border-radius: 999px !important;
+            display: inline-block;
+            font-size: 1.4rem;
+            padding: 10px 17px;
+            text-align: center;
+            transition: 0.3s ease;
+            user-select: none;
+            white-space: nowrap;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.loading {
+    --spinner-top: 35%;
+    --spinner-left: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    &::before {
+        animation: Spinner 1s ease infinite;
+        position: absolute;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        content: '';
+        border-radius: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        border-bottom-color: var(--color-primary);
+        border-top-color: var(--color-primary);
+        left: var(--spinner-left);
+        top: var(--spinner-top);
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@keyframes Spinner {
+    to {
+        transform: rotate(0);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+}

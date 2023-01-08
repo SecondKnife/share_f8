@@ -1,0 +1,127 @@
+.wrapper {
+    .track-wrap {
+        background-color: #f7f8fa;
+        border-bottom: 1px solid #dedfe0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 8px 20px;
+        position: sticky;
+        top: 0;
+        user-select: none;
+        z-index: 2;
+
+        &:hover {
+            background-color: #edeff1;
+            cursor: pointer;
+        }
+
+        .title {
+            color: var(--color-black);
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        .desc {
+            color: #29303b;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+
+        .icon {
+            color: #333;
+            font-size: 1.6rem;
+            position: absolute;
+            right: 23px;
+            top: 12px;
+        }
+    }
+
+    .track-list {
+        display: block;
+
+        &.open {
+            display: none;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0 10px 2px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: #f1f1f1;
+            }
+
+            &.active {
+                background: rgba(240, 81, 35, 0.2);
+
+                .step-desc {
+                    svg {
+                        color: rgba(240, 81, 35, 0.8) !important;
+                        animation: StepItem 5s linear infinite;
+                    }
+                }
+            }
+
+            .info {
+                cursor: pointer;
+                flex: 1;
+                margin: 0 0 0 28px;
+                position: relative;
+
+                .step-title {
+                    color: var(--color-black);
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    margin: 0;
+                    position: relative;
+                    top: -2px;
+                }
+
+                .step-desc {
+                    font-size: 1.1rem;
+                    margin-top: 11px;
+                    margin-bottom: 0;
+
+                    svg {
+                        color: #888;
+                        font-size: 1.1rem;
+                        margin-right: 6px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    span {
+                        color: #888;
+                    }
+                }
+            }
+
+            .step-icon {
+                display: flex;
+                justify-content: center;
+                margin-right: 12px;
+                width: 36px;
+
+                svg {
+                    color: #5db85c;
+                    font-size: 1.4rem;
+                    margin-top: 1px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes StepItem {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
